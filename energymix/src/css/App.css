@@ -1,0 +1,35 @@
+.tab{
+  padding: 15px;
+  border-radius: 15px;
+  color: #10261C;
+  cursor: pointer;
+
+
+}
+.tab.active{
+  background-color: #2E7D32;
+  color: #fff;
+  cursor: default;
+}
+.tab:hover{
+  background-color: #2E7D32;
+  color: #fff;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+input {
+  width: 4rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  background-color: #2E7D32;
+  border-radius: 3px;
+}
+p {
+  font-size: 1.1rem;
+}
