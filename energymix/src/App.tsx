@@ -12,7 +12,7 @@ function App() {
             <NavLink to="/generation" className={({isActive }) => isActive ? "tab active" : "tab"} >
                 Show generation energy mix</NavLink>
             <NavLink to="/charging" className={({isActive }) => isActive ? "tab active" : "tab"}>
-                Show best window to charge a car</NavLink>
+                Show the best charging window</NavLink>
         </nav>
         <div>
             <Routes>

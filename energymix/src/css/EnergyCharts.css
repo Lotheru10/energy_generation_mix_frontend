@@ -1,0 +1,14 @@
+.chars{
+    padding: 1px;
+    float: left;
+    margin: 10px;
+}
+
+@media (max-width: 1100px) {
+    .chars{
+        padding: 1px;
+        margin-left:90px;
+        clear: both;
+
+    }
+}

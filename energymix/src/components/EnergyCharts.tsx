@@ -4,15 +4,15 @@ import type {GenerationalResponse} from "../types/types";
 type Props = { days?: GenerationalResponse };
 
 const COLORS: Record<string, string> = {
-    hydro: "aqua",
+    hydro: "darkblue",
     wind: "royalblue",
-    solar: "gold",
+    solar: "darkgoldenrod",
     biomass: "forestgreen",
-    nuclear: "darkorange",
-    gas: "mediumpurple",
-    coal: "slategray",
-    imports: "#b7c1c3",
-    other: "lavender",
+    nuclear: "chocolate",
+    gas: "purple",
+    coal: "darkslategray",
+    imports: "#3d3e3e",
+    other: "#911c1c",
 };
 
 function getColor(name: string) {
@@ -32,7 +32,7 @@ export default function EnergyCharts({ days = [] }: Props) {
             {days.map((d) => {
                 const pieData = toPieData(d.averageUse);
                 return (
-                    <div key={d.date} style={{padding: 1, float: "left", margin:10 }}>
+                    <div className="chars" key={d.date}>
                         <div>
                             <h3>{d.date.slice(0, 10)}</h3>
                         </div>

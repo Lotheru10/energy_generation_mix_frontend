@@ -14,8 +14,13 @@ export default function ChargingPage(){
         setError("");
 
         try{
-            const res = await getChargingWindow(length);
-            setData(res);
+            if (length>0 && length<7) {
+                const res = await getChargingWindow(length);
+                setData(res);
+            }
+            else {
+                setError("Please, choose a valid number (1-6)");
+            }
         }
         catch {
             setError("Error loading charging window")
@@ -32,7 +37,8 @@ export default function ChargingPage(){
                 Check
             </button>
 
-            {error && <p>ERROR {error}</p>}
+
+            {error && <p>{error}</p>}
             {data && <ChargingResult data={data}/>}
         </div>
     );
