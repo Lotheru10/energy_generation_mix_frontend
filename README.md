@@ -24,4 +24,5 @@ This application uses public API Carbon Intensity API to analyze daily UK's ener
 
 ## How to run locally
 npm install
+
 npm run dev
